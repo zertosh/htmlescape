@@ -1,7 +1,7 @@
 {
   "name": "htmlescape",
   "version": "0.0.1",
-  "description": "htmlescape",
+  "description": "Properly escape JSON for usage as an object literal inside of a `<script>` tag",
   "keywords": [
     "escape",
     "encoding",

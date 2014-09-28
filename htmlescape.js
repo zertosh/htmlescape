@@ -1,10 +1,7 @@
 /**
- * Proper escaping of JSON for usage as an object literal inside
- * of a `<script>` tag.
- *
- * js implementation of http://golang.org/pkg/encoding/json/#HTMLEscape
- *
- * more info: http://timelessrepo.com/json-isnt-a-javascript-subset
+ * Properly escape JSON for usage as an object literal inside of a `<script>` tag.
+ * JS implementation of http://golang.org/pkg/encoding/json/#HTMLEscape
+ * More info: http://timelessrepo.com/json-isnt-a-javascript-subset
  */
 
 'use strict';
