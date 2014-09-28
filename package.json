@@ -1,0 +1,30 @@
+{
+  "name": "htmlescape",
+  "version": "0.0.1",
+  "description": "htmlescape",
+  "keywords": [
+    "escape",
+    "encoding",
+    "html",
+    "json",
+    "template"
+  ],
+  "homepage": "https://github.com/zertosh/htmlescape",
+  "licence": "MIT",
+  "author": "Andres Suarez <zertosh@gmail.com>",
+  "main": "htmlescape.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zertosh/htmlescape.git"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
