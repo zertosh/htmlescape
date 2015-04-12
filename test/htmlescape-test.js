@@ -57,4 +57,18 @@ test('htmlescape', function(t) {
     t.end();
   });
 
+  t.test('sanitized terminators should work', function(t) {
+    t.doesNotThrow(function() {
+      vm.runInNewContext(htmlescape.sanitize('("\u2028\u2029")'));
+    });
+    t.end();
+  });
+
+  t.test('unsanitized terminators should not work', function(t) {
+    t.throws(function() {
+      vm.runInNewContext('("\u2028\u2029")');
+    });
+    t.end();
+  });
+
 });

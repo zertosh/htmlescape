@@ -23,3 +23,20 @@ function escaper(match) {
 module.exports = function(obj) {
   return JSON.stringify(obj).replace(ESCAPE_REGEX, escaper);
 };
+
+/***/
+
+var TERMINATORS_LOOKUP = {
+  '\u2028': '\\u2028',
+  '\u2029': '\\u2029'
+};
+
+var TERMINATORS_REGEX = /[\u2028\u2029]/g;
+
+function sanitizer(match) {
+  return TERMINATORS_LOOKUP[match];
+}
+
+module.exports.sanitize = function(str) {
+  return str.replace(TERMINATORS_REGEX, sanitizer);
+};
