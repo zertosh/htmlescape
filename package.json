@@ -10,7 +10,7 @@
     "template"
   ],
   "homepage": "https://github.com/zertosh/htmlescape",
-  "licence": "MIT",
+  "license": "MIT",
   "author": "Andres Suarez <zertosh@gmail.com>",
   "main": "htmlescape.js",
   "repository": {
